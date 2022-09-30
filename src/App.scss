@@ -1,0 +1,13 @@
+$primary-color: royalblue;
+
+@import 'animate.css';
+
+@font-face {
+  font-family: 'Market';
+  src: url('./assets/Market_Deco.ttf')format('ttf');
+}
+
+input,
+textarea {
+  font-family: 'Market'; 
+}
