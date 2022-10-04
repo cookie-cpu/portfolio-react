@@ -12,8 +12,8 @@ const SideBar = () => {
     return (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img src={Logo1} alt="logo" />
-            <p>Matthew Cook</p>
+            <img className='logo-image' src={Logo1} alt="logo" />
+            <p className="sub-logo">MC</p>
             {/* <img className="sub-logo"src={Logo2} alt="logo2" /> */}
         </Link>
         <nav>
