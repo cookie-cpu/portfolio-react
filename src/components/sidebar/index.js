@@ -1,7 +1,8 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope, faHome, faUser} from '@fortawesome/free-solid-svg-icons'
+import {faEnvelope, faHome, faUser, } from '@fortawesome/free-solid-svg-icons'
+import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
 // import Logo1 from '.../src/assets/Matthew Cook.png
 import Logo1 from '../../assets//MatthewCookLogo.png'
 
@@ -27,6 +28,19 @@ const SideBar = () => {
                 <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" />
             </NavLink>
         </nav>
+
+        <ul>
+            <li>
+                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/matthew-cook-735881208/">
+                    <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
+                </a>
+            </li>
+            <li>
+                <a target="_blank" rel="noreferrer" href="https://github.com/cookie-cpu">
+                    <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
+                </a>
+            </li>
+        </ul>
 
     </div>
     )
