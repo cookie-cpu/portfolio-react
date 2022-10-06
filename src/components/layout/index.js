@@ -1,9 +1,24 @@
 import './index.scss';
 import SideBar from '../sidebar/index'
+import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
-    <SideBar />
+
+        <div className='App'>
+            <SideBar />
+            <div classname='page'>
+                <span className='tags top-tags'>&lt;body1 lorem ipsum&gt;</span>
+
+            <Outlet />
+            <span className='tags bottom-tags'>
+            &lt;body2&gt;
+            <br />
+            <span className='bottom-tag-html'>&lt;html bottom&gt;</span>
+            </span>
+
+            </div>
+        </div>
     )
 }
 
