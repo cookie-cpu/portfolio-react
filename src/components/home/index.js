@@ -3,6 +3,7 @@ import './index.scss';
 import Portrait from '../../assets/portrait.jpeg';
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../animatedLetters";
+import Loader from "react-loaders";
 
 const Home = () => {
 
@@ -46,6 +47,7 @@ const Home = () => {
                 <Link to='/projects' className="flat-button">Portfolio</Link>
             </div>
         </div>
+        <Loader type='pacman'/>
         </>);
 }
 
