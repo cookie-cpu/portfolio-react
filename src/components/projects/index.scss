@@ -1,0 +1,18 @@
+.projects {
+display: flex;
+justify-content: space-evenly;
+background-color: lightgray;
+padding: auto;
+height: auto;
+width: auto;
+margin-left: 100px;
+margin-right: 50px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    color: black;
+    font-size: 60px;
+}
