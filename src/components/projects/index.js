@@ -17,7 +17,7 @@ const Projects = () => {
                         <BasicCard 
                             title={"title"}
                             description={"description"}
-                            stack={"techstack"}
+                            stack={["front end","database"]}
                             // img={img1}
                             demo={"link1"}
                             repo={"link2"}
@@ -26,7 +26,7 @@ const Projects = () => {
                         <ProjectCard 
                             title={"Portfolio Site"}
                             description={"a website to display my projects (site you are currently on)"}
-                            stack={"react, scss, material UI, heroku"}
+                            stack={['react', 'scss', 'material UI', 'heroku']}
                             img={img1}
                             demo={"https://matthewcook-portfolio.herokuapp.com/"}
                             repo={"https://github.com/cookie-cpu/portfolio-react"}
@@ -35,10 +35,10 @@ const Projects = () => {
                         <ProjectCard 
                             title={"other project"}
                             description={"lorem ipsum"}
-                            stack={"react, scss, sql"}
+                            stack={["react", 'scss', 'sql']}
                             // img={img1}
-                            demo={"/"}
-                            repo={"/"}
+                            // demo={"/"}
+                            // repo={"/"}
                         />
 
                     </div>
