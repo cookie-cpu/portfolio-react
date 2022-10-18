@@ -1,0 +1,28 @@
+{
+    "projects": {
+        "project": [
+            {
+                "id": "1",
+                "title": "Portfolio Site",
+                "description": "a website to display my projects (site you are currently on)",
+                "stack": "['react', 'scss', 'material UI', 'heroku']",
+                "img": "../../assets/projects/portfoliosite.png",
+                "demo": "https://matthewcook-portfolio.herokuapp.com/",
+                "repo": "https://github.com/cookie-cpu/portfolio-react"
+            },
+
+            {
+                "id": "2",
+                "title": "other site",
+                "description": "desciprtion",
+                "stack": "['html', 'scss', 'javascript']",
+                "img": false,
+                "demo": false,
+                "repo": false
+            }
+
+
+
+        ]
+    }
+   }
