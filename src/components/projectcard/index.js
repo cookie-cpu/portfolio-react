@@ -12,35 +12,41 @@ import {faCode, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faSite
 
 export default function ProjectCard({title, description, stack, img, demo, repo}) {
   
-  // const testData = ['html', 'scc', 'javascript'];
+  // const testData = ['html', 'css', 'javascript'];
 
   const stackList = stack.map((technology) => {
     return (
-      <li>{technology}</li>
+      <li key={technology[0]}>{technology}</li>
     )
   })
 
   return (
-    <Card sx={{ maxWidth: 500 }}>
+    <Card sx={{ maxWidth: 550 }}>
 
         <CardContent>
-
-          <a href={demo} target="blank">
+          
+          {demo ? <a href={demo} target="blank">
             <CardMedia
               component="img"
               height="200"
+              src={img}
               image={img}
               alt="img"
-            /></a>
+            /></a> : <CardMedia
+            component="img"
+            height="200"
+            image={img}
+            alt="img"
+          />}
+          
             
             <h1 className='project-title'>{title}</h1>
-            {/* <a href={demo} target="blank"><img className='thumbnail' src={img} ></img></a> */}
             <p className='project-description'>{description}</p>
-            <p className='project-stack'>
+            <div className='project-stack'>
               <ul>
                   {stackList}
               </ul>
-            </p>
+            </div>
 
         </CardContent>
 
@@ -49,6 +55,7 @@ export default function ProjectCard({title, description, stack, img, demo, repo}
           {demo ? <Button href={demo} target="blank" size="large">View Live Demo <span className='spacer'></span> <FontAwesomeIcon icon={faExternalLink}/></Button> : false}
           {repo ? <Button href={repo} target="blank" size="large">View Code Repo <span className='spacer'></span><FontAwesomeIcon icon={faCode}/></Button> : false}
         </CardActions>
+
     </Card>
   );
 }

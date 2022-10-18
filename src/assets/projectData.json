@@ -1,28 +1,23 @@
 {
-    "projects": {
-        "project": [
-            {
-                "id": "1",
-                "title": "Portfolio Site",
-                "description": "a website to display my projects (site you are currently on)",
-                "stack": "['react', 'scss', 'material UI', 'heroku']",
-                "img": "../../assets/projects/portfoliosite.png",
-                "demo": "https://matthewcook-portfolio.herokuapp.com/",
-                "repo": "https://github.com/cookie-cpu/portfolio-react"
-            },
+    "projects": [
+        {
+            "id": "1",
+            "title": "Portfolio Site",
+            "description": "a website to display my projects (site you are currently on)",
+            "stack": ["React", "Scss", "Material UI", "Heroku","FontAwesomeIcons"],
+            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "demo": "https://matthewcook-portfolio.herokuapp.com/",
+            "repo": "https://github.com/cookie-cpu/portfolio-react"
+        },
+        {
+            "id": "2",
+            "title": "other site",
+            "description": "desciprtion",
+            "stack":["html", "css", "javascript"],
+            "img": false,
+            "demo": false,
+            "repo": false
+        }
+    ]
+}
 
-            {
-                "id": "2",
-                "title": "other site",
-                "description": "desciprtion",
-                "stack": "['html', 'scss', 'javascript']",
-                "img": false,
-                "demo": false,
-                "repo": false
-            }
-
-
-
-        ]
-    }
-   }
