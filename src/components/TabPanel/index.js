@@ -21,7 +21,8 @@ function TabPanel(props) {
     >
       {value === index && (
         <Box sx={{ p: 3 }}>
-          <Typography>{children}</Typography>
+          <div>{children}</div>
+          {/* <Typography>{children}</Typography> */}
         </Box>
       )}
     </div>
@@ -48,7 +49,7 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
-  const projectList = jsonData.projects.map((project) => {
+  const webProjects = jsonData.projects.map((project) => {
     return (
         <ProjectCard 
             key={project.id}
@@ -62,71 +63,60 @@ export default function BasicTabs() {
     )
   })
 
+  const gameProjects = jsonData.games.map((project) => {
+    return (
+        <ProjectCard 
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            stack={project.stack}
+            img={project.img}
+            demo={project.demo}
+            repo={project.repo}
+        />
+    )
+  })
+
+  const miscProjects = jsonData.other.map((project) => {
+    return (
+        <ProjectCard 
+            key={project.id}
+            title={project.title}
+            description={project.description}
+            stack={project.stack}
+            img={project.img}
+            demo={project.demo}
+            repo={project.repo}
+        />
+    )
+  })
+
+  
+
   return (
-    <Box sx={{ width: '100%' }}>
-      <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-        <Tabs value={value} onChange={handleChange} centered variant="scrollable" scrollButtons="auto">
-          <Tab label={jsonData.projects[0].title} {...a11yProps(0)} />
-          <Tab label="Backend" {...a11yProps(1)} />
-          <Tab label="Other" {...a11yProps(3)} />
-          <Tab label="Other" {...a11yProps(4)} />
-          <Tab label="Other" {...a11yProps(5)} />
-          <Tab label="Other" {...a11yProps(6)} />
-          <Tab label="Other" {...a11yProps(7)} />
-          <Tab label="Other" {...a11yProps(8)} />
-          <Tab label="Other" {...a11yProps(9)} />
-          <Tab label="Other" {...a11yProps(10)} />
-        </Tabs>
-      </Box>
-      <TabPanel value={value} index={0} className='projects'>
-        <ProjectCard 
-              key={jsonData.projects[0].id}
-              title={jsonData.projects[0].title}
-              description={jsonData.projects[0].description}
-              stack={jsonData.projects[0].stack}
-              img={jsonData.projects[0].img}
-              demo={jsonData.projects[0].demo}
-              repo={jsonData.projects[0].repo}
-          />
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        <ProjectCard 
-                key={jsonData.projects[1].id}
-                title={jsonData.projects[1].title}
-                description={jsonData.projects[1].description}
-                stack={jsonData.projects[1].stack}
-                img={jsonData.projects[1].img}
-                demo={jsonData.projects[1].demo}
-                repo={jsonData.projects[1].repo}
-            />
-      </TabPanel>
-      <TabPanel value={value} index={2}>
-        1
-      </TabPanel>
-      <TabPanel value={value} index={3}>
-        2
-      </TabPanel>
-      <TabPanel value={value} index={4}>
-        3
-      </TabPanel>
-      <TabPanel value={value} index={5}>
-        4
-      </TabPanel>
-      <TabPanel value={value} index={6}>
-        5
-      </TabPanel>
-      <TabPanel value={value} index={7}>
-        6
-      </TabPanel>
-      <TabPanel value={value} index={8}>
-        7
-      </TabPanel>
-      <TabPanel value={value} index={9}>
-        8
-      </TabPanel>
-      <TabPanel value={value} index={10}>
-        9
-      </TabPanel>
+    <Box className='tab-bar' sx={{ width: '100%' }}>
+
+
+        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <Tabs value={value} onChange={handleChange} centered scrollButtons="auto">
+            <Tab label={"Web Development"} {...a11yProps(0)} />
+            <Tab label="Games" {...a11yProps(1)} />
+            <Tab label="Other" {...a11yProps(2)} />
+          </Tabs>
+        </Box>
+
+        <TabPanel value={value} index={0} className='projects'>
+          {webProjects}
+        </TabPanel>
+
+        <TabPanel value={value} index={1}  className='projects'>
+          {gameProjects}
+        </TabPanel>
+
+        <TabPanel value={value} index={2}  className='projects'>
+          {miscProjects}
+        </TabPanel>
+
     </Box>
   );
 }

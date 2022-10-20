@@ -55,8 +55,8 @@ export default function Projects () {
             <div className='container projects-page'>
                 <h1 className='title'>Projects</h1>
                     <div className='projects'>
-                        {/* <TabPanel /> */}
-                        {projectList}
+                        <TabPanel />
+                        {/* {projectList} */}
                     </div>
             </div>
 
