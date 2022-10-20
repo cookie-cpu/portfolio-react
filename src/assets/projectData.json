@@ -8,15 +8,29 @@
             "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
             "demo": "https://matthewcook-portfolio.herokuapp.com/",
             "repo": "https://github.com/cookie-cpu/portfolio-react"
-        },
+        }
+        
+    ],
+    "games" : [
         {
-            "id": "2",
-            "title": "other site",
-            "description": "desciprtion",
-            "stack":["html", "css", "javascript"],
-            "img": false,
-            "demo": false,
-            "repo": false
+            "id": "1",
+            "title": "tank game",
+            "description": "tanks",
+            "stack": ["phaser"],
+            "img": "",
+            "demo": "https://lhltanks.herokuapp.com/",
+            "repo": "https://github.com/ermurray/tanks-final"
+        }
+    ],
+    "other" : [
+        {
+            "id": "1",
+            "title": "homework app",
+            "description": "A full stack database app built using java and SQL. IB computer science higher level final project.",
+            "stack": ["java","SQL"],
+            "img": "",
+            "demo": "",
+            "repo": ""
         }
     ]
 }
