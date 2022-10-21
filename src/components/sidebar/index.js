@@ -1,8 +1,8 @@
 import './index.scss'
 import { Link, NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faEnvelope, faFileCode, faFolder, faHome, faUser, } from '@fortawesome/free-solid-svg-icons'
-import {faLinkedin, faGithub} from '@fortawesome/free-brands-svg-icons'
+import {fa0, faBookAtlas, faBookJournalWhills, faBookOpen, faContactBook, faEnvelope, faFileCode, faFileContract, faFilePdf, faFileText, faFolder, faHome, faPerson, faUser, } from '@fortawesome/free-solid-svg-icons'
+import {faLinkedin, faGithub, faReadme} from '@fortawesome/free-brands-svg-icons'
 // import Logo1 from '.../src/assets/Matthew Cook.png
 import Logo1 from '../../assets//MatthewCookLogo.png'
 
@@ -41,6 +41,11 @@ const SideBar = () => {
             <li>
                 <a id='github-link' target="_blank" rel="noreferrer" href="https://github.com/cookie-cpu">
                     <FontAwesomeIcon icon={faGithub}/>
+                </a>
+            </li>
+            <li>
+                <a id='resume-link' target="_blank" rel="noreferrer" href="https://resume.creddle.io/resume/7unjh2qlpud">
+                    <FontAwesomeIcon icon={faFileText}/><br />
                 </a>
             </li>
         </ul>

@@ -61,7 +61,7 @@
           content: '';
           font-family: Verdana, Geneva, Tahoma, sans-serif;
           font-size: 0.9rem;
-          letter-spacing: 2px;
+          letter-spacing: 1.5px;
           position: absolute;
           right: 0;
           bottom: 0;
@@ -116,13 +116,15 @@
       margin: 0;
   
       li {
+
         a {
-          padding: 7px 0;
+          padding: 8px 0;
           display: block;
-          font-size: 17px;
-          line-height: 17px;
+          font-size: 20px;
           color: #4d4d4e;
+          
         }
+
         #linkedin-link{
           &:hover {
             transform: scale(1.25);
@@ -131,6 +133,7 @@
             }
           }
         }
+
         #github-link{
           &:hover {
             transform: scale(1.25);
@@ -138,6 +141,49 @@
               color: #ffd700;
             }
           }
+        }
+
+        #resume-link{
+          i {
+            transition: all 0.3s ease-out;
+          }
+    
+          &:hover {
+            color: white;
+    
+            svg {
+              opacity: 1;
+            }
+    
+            &:after {
+              opacity: 1;
+            }
+          }
+    
+          &:after {
+            content: '';
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1rem;
+            color: #ffd700;
+            letter-spacing: 1.5px;
+            position: absolute;
+            padding-top: 10%;
+            // top: 10;
+            // right: 0;
+            // bottom: 0;
+            display: block;
+            width: 100%;
+            text-align: center;
+            
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-out;
+            transition: all 0.7s ease-out;
+          }
+            &:after {
+            content: 'RESUME';
+          }
+            
+          
         }
   
         
