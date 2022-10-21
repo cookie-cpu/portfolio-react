@@ -8,6 +8,22 @@
             "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
             "demo": "https://matthewcook-portfolio.herokuapp.com/",
             "repo": "https://github.com/cookie-cpu/portfolio-react"
+        },{
+            "id": "2",
+            "title": "Other site",
+            "description": "lorem ipsum",
+            "stack": ["html"],
+            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "demo": "",
+            "repo": ""
+        },{
+            "id": "3",
+            "title": "Other site",
+            "description": "lorem ipsum",
+            "stack": ["html"],
+            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "demo": "",
+            "repo": ""
         }
         
     ],

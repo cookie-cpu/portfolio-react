@@ -1,21 +1,28 @@
+.project-card{
+    :hover{
+        transform: scale(1.01);
+    }
+}
+
 .project-title{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 1000;
     font-size: 36px;
-    color: rgb(0, 0, 153);
+    color: rgb(94, 94, 94);
     margin: 50px;
 }
 
 .thumbnail{
-    height: 100px;
+    height: 110px;
 }
 
 .project-description{
- color: green;
+ font-family: Arial, Helvetica, sans-serif;
+ color: black;
 }
 
 .project-stack{
- color: skyblue;
+ font-family: 'Courier New', Courier, monospace;
+ color: darkslateblue;
 }
 
-.spacer{
-    width: 10px;
-}

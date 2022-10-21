@@ -51,6 +51,7 @@ export default function BasicTabs() {
 
   const webProjects = jsonData.projects.map((project) => {
     return (
+      
         <ProjectCard 
             key={project.id}
             title={project.title}
@@ -105,16 +106,22 @@ export default function BasicTabs() {
           </Tabs>
         </Box>
 
-        <TabPanel value={value} index={0} className='projects'>
-          {webProjects}
+        <TabPanel value={value} index={0} className='project-tab'>
+          <div className='projects'>
+              {webProjects}
+          </div>
         </TabPanel>
 
-        <TabPanel value={value} index={1}  className='projects'>
-          {gameProjects}
+        <TabPanel value={value} index={1}  className='project-tab'>
+          <div className='projects'>
+            {gameProjects}
+          </div>
         </TabPanel>
 
-        <TabPanel value={value} index={2}  className='projects'>
-          {miscProjects}
+        <TabPanel value={value} index={2}  className='project-tab'>
+          <div className='projects'>
+            {miscProjects}
+          </div>
         </TabPanel>
 
     </Box>

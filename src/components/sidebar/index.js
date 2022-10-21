@@ -34,13 +34,13 @@ const SideBar = () => {
 
         <ul>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/matthew-cook-735881208/">
-                    <FontAwesomeIcon icon={faLinkedin} color="4d4d4e" />
+                <a id='linkedin-link' target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/matthew-cook-735881208/">
+                    <FontAwesomeIcon icon={faLinkedin}/>
                 </a>
             </li>
             <li>
-                <a target="_blank" rel="noreferrer" href="https://github.com/cookie-cpu">
-                    <FontAwesomeIcon icon={faGithub} color="4d4d4e" />
+                <a id='github-link' target="_blank" rel="noreferrer" href="https://github.com/cookie-cpu">
+                    <FontAwesomeIcon icon={faGithub}/>
                 </a>
             </li>
         </ul>

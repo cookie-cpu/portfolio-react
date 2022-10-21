@@ -36,28 +36,27 @@ export default function Projects () {
     // {jsonData.project[0].description}
     
     
-    const projectList = jsonData.projects.map((project) => {
-        return (
-            <ProjectCard 
-                key={project.id}
-                title={project.title}
-                description={project.description}
-                stack={project.stack}
-                img={project.img}
-                demo={project.demo}
-                repo={project.repo}
-            />
-        )
-      })
+    // const projectList = jsonData.projects.map((project) => {
+    //     return (
+    //         <ProjectCard 
+    //             key={project.id}
+    //             title={project.title}
+    //             description={project.description}
+    //             stack={project.stack}
+    //             img={project.img}
+    //             demo={project.demo}
+    //             repo={project.repo}
+    //         />
+    //     )
+    //   })
 
     return (
         <>
             <div className='container projects-page'>
                 <h1 className='title'>Projects</h1>
-                    <div className='projects'>
                         <TabPanel />
                         {/* {projectList} */}
-                    </div>
+                    
             </div>
 
             <Loader type="pacman"></Loader>
