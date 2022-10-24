@@ -1,17 +1,25 @@
 .projects {
-background-color: green;
+// background-color: green;
+
+// padding: auto;
+// height: auto;
+// width: auto;
+margin-left: 100px;
+margin-right: 50px;
+// overflow-x: hidden;
+// overflow-y: auto;
+
 display: flex;
 flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-evenly;
-justify-items: center;
 background-color: lightgray;
-padding: auto;
-height: auto;
 width: auto;
-margin-left: 100px;
-margin-right: 50px;
-
+height: 550px;
+overflow-x: hidden;
+overflow-y: auto;
+text-align: center;
+padding: 20px;
 }
 
 .title{

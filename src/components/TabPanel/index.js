@@ -7,6 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ProjectCard from '../projectcard'
 import jsonData from '../../assets/projectData.json';
+import { fontFamily, fontSize } from '@mui/system';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -49,6 +50,12 @@ export default function BasicTabs() {
     setValue(newValue);
   };
 
+ const tabStyle = {
+  bgcolor: 'darkgrey',
+  fontSize: 12,
+  fontFamily: 'Courier New'
+ };
+
   const webProjects = jsonData.projects.map((project) => {
     return (
       
@@ -88,41 +95,43 @@ export default function BasicTabs() {
             img={project.img}
             demo={project.demo}
             repo={project.repo}
+            
         />
     )
   })
 
   
-
   return (
     <Box className='tab-bar' sx={{ width: '100%' }}>
 
 
-        <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
-          <Tabs value={value} onChange={handleChange} centered scrollButtons="auto">
-            <Tab label={"Web Development"} {...a11yProps(0)} />
-            <Tab label="Games" {...a11yProps(1)} />
-            <Tab label="Other" {...a11yProps(2)} />
-          </Tabs>
-        </Box>
+          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+            <Tabs value={value} onChange={handleChange} centered>
 
-        <TabPanel value={value} index={0} className='project-tab'>
-          <div className='projects'>
-              {webProjects}
-          </div>
-        </TabPanel>
+              <Tab sx={tabStyle} label={"Web Development"} {...a11yProps(0)} />
+              <Tab sx={tabStyle} label="Games" {...a11yProps(1)} />
+              <Tab sx={tabStyle} label="Other" {...a11yProps(2)} />
 
-        <TabPanel value={value} index={1}  className='project-tab'>
-          <div className='projects'>
-            {gameProjects}
-          </div>
-        </TabPanel>
+            </Tabs>
+          </Box>
 
-        <TabPanel value={value} index={2}  className='project-tab'>
-          <div className='projects'>
-            {miscProjects}
-          </div>
-        </TabPanel>
+          <TabPanel value={value} index={0} className='project-tab'>
+            <div className='projects'>
+                {webProjects}
+            </div>
+          </TabPanel>
+
+          <TabPanel value={value} index={1}  className='project-tab'>
+            <div className='projects'>
+              {gameProjects}
+            </div>
+          </TabPanel>
+
+          <TabPanel value={value} index={2}  className='project-tab'>
+            <div className='projects'>
+              {miscProjects}
+            </div>
+          </TabPanel>
 
     </Box>
   );
