@@ -80,6 +80,7 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
         
           {demo || repo ? <CardActions className='project-actions'
           sx={{
+            
             // minWidth: 100,
             // maxHeight: 550,
             // maxWidth: 300,
@@ -89,7 +90,9 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
             borderRadius: 5,
             p: 2,
             m: 1, 
+            
             '&:hover': {
+              boxShadow: 20,
               // bgcolor: 'gray',
             }
               }}>

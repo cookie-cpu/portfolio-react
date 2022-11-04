@@ -9,7 +9,7 @@ export default function Projects () {
   
     return (
         <>
-            <div className='container projects-page'>
+            <div className='projects-page'>
                 <h1 className='title'>Projects</h1>
                         <TabPanel /> 
             </div>

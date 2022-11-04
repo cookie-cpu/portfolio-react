@@ -1,3 +1,19 @@
+
+.projects-page{
+    width: 100%;
+    height: 50%;
+    will-change: contents;
+    min-height: 50px;
+    
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;}
+
+
 .projects {
 // background-color: green;
 
@@ -15,12 +31,16 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 background-color: lightgray;
 width: auto;
-height: 550px;
+height: 600px;
 overflow-x: hidden;
 overflow-y: auto;
 text-align: center;
 padding: 20px;
+
+scrollbar-color: #ffd700 #666;
+scrollbar-width: thin; 
 }
+
 
 .title{
     font-family: Impact;
