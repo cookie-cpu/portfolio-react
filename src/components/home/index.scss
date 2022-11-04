@@ -99,6 +99,7 @@
       white-space: nowrap;
   
       &:hover {
+        transition: .25s;
         // animation: pulse 1s backwards;
         // opacity: 1;
         transform: scale(1.1);
