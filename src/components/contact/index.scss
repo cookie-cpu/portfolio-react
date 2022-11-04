@@ -1,74 +1,167 @@
-.contact-form {
-    width: 100%;
-    margin-top: 20px;
+// .contact-form {
+//     width: 100%;
+//     margin-top: 20px;
   
-    ul {
-      padding: 0;
-      margin: 0;
+//     ul {
+//       padding: 0;
+//       margin: 0;
   
-      li {
-        padding: 0;
-        margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        opacity: 0;
-        overflow: hidden;
+//       li {
+//         padding: 0;
+//         margin: 0;
+//         list-style: none;
+//         margin-bottom: 10px;
+//         opacity: 0;
+//         overflow: hidden;
+//         display: block;
+//         clear: both;
+//         position: relative;
+//         animation: fadeInUp 2s 2s;
+//         animation-fill-mode: forwards;
+//       }
+  
+//       li.half {
+//         width: 49%;
+//         margin-left: 2%;
+//         float: left;
+//         clear: none;
+  
+//         &:first-child {
+//           margin-left: 0;
+//         }
+//       }
+//     }
+  
+//     input[type='text'],
+//     input[type='email'] {
+//       width: 100%;
+//       border: 0;
+//       background: #115173;
+//       height: 50px;
+//       font-size: 16px;
+//       color: #fff;
+//       padding: 0 20px;
+//       box-sizing: border-box;
+//     }
+  
+//     textarea {
+//       width: 100%;
+//       border: 0;
+//       background: #115173;
+//       height: 50px;
+//       font-size: 16px;
+//       color: #fff;
+//       padding: 20px;
+//       box-sizing: border-box;
+//       min-height: 150px;
+//     }
+  
+//     .flat-button {
+//       color: #ffd700;
+//       font-size: 11px;
+//       letter-spacing: 3px;
+//       text-decoration: none;
+//       padding: 8px 10px;
+//       border: 1px solid #ffd700;
+//       float: left;
+//       border-radius: 4px;
+//       background: 0 0;
+//       text-transform: uppercase;
+//       float: right;
+//       text-align: center;
+//       margin-right: 10px;
+//     }
+//   }
+
+.contact-me-links{
+width: 75%;
+
+  ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #888;
+  }
+
+  li {
+    
+    list-style: none;
+
+      a {
+        margin: 1rem;
+        padding: 1rem;
         display: block;
-        clear: both;
-        position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
+        font-size: 40px;
+        color: #444;
+        
       }
-  
-      li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-  
-        &:first-child {
-          margin-left: 0;
+
+
+    #linkedin-link{
+      &:hover {
+        color: skyblue;
+
+        svg {
+          transform: scale(1.25);
+          opacity: 1;
+        }
+
+        &:after {
+          opacity: 1;
         }
       }
+
+      &:after {
+        content: '';
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 15px;
+        color: #444;
+        // display: block;
+        padding: 15px;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.8s ease-out;
+      }
+        &:after {
+        content: 'LINKEDIN';
+      }
+        
+      
     }
-  
-    input[type='text'],
-    input[type='email'] {
-      width: 100%;
-      border: 0;
-      background: #115173;
-      height: 50px;
-      font-size: 16px;
-      color: #fff;
-      padding: 0 20px;
-      box-sizing: border-box;
+    #email-link{
+      &:hover {
+        
+        color: white;
+
+        svg {
+          transform: scale(1.25);
+          opacity: 1;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 16px;
+        color: #444;
+        padding: 15px;
+        // display: block;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-out;
+        transition: all 0.8s ease-out;
+      }
+        &:after {
+        content: 'EMAIL';
+      }
+        
+      
     }
-  
-    textarea {
-      width: 100%;
-      border: 0;
-      background: #115173;
-      height: 50px;
-      font-size: 16px;
-      color: #fff;
-      padding: 20px;
-      box-sizing: border-box;
-      min-height: 150px;
-    }
-  
-    .flat-button {
-      color: #ffd700;
-      font-size: 11px;
-      letter-spacing: 3px;
-      text-decoration: none;
-      padding: 8px 10px;
-      border: 1px solid #ffd700;
-      float: left;
-      border-radius: 4px;
-      background: 0 0;
-      text-transform: uppercase;
-      float: right;
-      text-align: center;
-      margin-right: 10px;
-    }
+
+    
   }
+}
+
