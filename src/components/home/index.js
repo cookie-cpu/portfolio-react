@@ -3,7 +3,7 @@ import './index.scss';
 import Portrait from '../../assets/portrait.jpeg';
 import Loader from "react-loaders";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faFolder, faFolderBlank, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faFileText, faFolder, faFolderBlank, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
 import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
@@ -21,6 +21,7 @@ const Home = () => {
                 <div>
                     <Link to='/contact' className="flat-button">Contact <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" /> </Link>
                     <Link to='/projects' className="flat-button">Projects <FontAwesomeIcon icon={faFolder} color="4d4d4e" /></Link>
+                    <Link to='/resume' className="flat-button">Resume <FontAwesomeIcon icon={faFileText} color="4d4d4e" /></Link>
                 </div>
             </div>
             {/* <img src={Portrait} alt="matthew-profile"/> */}
