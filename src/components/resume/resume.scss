@@ -1,5 +1,11 @@
 .resume-div{
     margin: 10rem;
+    margin-left: 200px;
+    // opacity: 0;
+    // animation: fadeIn 2s 3s forwards;
+}
+
+.resume{
     opacity: 0;
-    animation: fadeIn 2s 3s forwards;
+    animation: fadeIn 3s 3s forwards;
 }
