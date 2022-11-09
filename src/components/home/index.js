@@ -4,7 +4,7 @@ import Portrait from '../../assets/portrait.jpeg';
 import Loader from "react-loaders";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faFileText, faFolder, faFolderBlank, faFolderOpen } from "@fortawesome/free-solid-svg-icons";
-import { faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faCss3, faGit, faGithub } from "@fortawesome/free-brands-svg-icons";
 import {
    // faCss3,
     faCss3Alt,
@@ -37,22 +37,22 @@ const Home = () => {
             <div className="stage-cube-cont">
                 <div className="cubespinner">
                     <div className="face1">
-                        <FontAwesomeIcon icon={faHtml5} color="red" />
+                        <FontAwesomeIcon icon={faHtml5} color="#E34C26" />
                     </div>
                     <div className="face2">
-                        <FontAwesomeIcon icon={faCss3Alt} color="blue" />
+                        <FontAwesomeIcon icon={faCss3Alt} color="#3c99dc" />
                     </div>
                     <div className="face3">
-                        <FontAwesomeIcon icon={faJs} color="yellow" />
+                        <FontAwesomeIcon icon={faJs} color="#f0db4f" />
                     </div>
                     <div className="face4">
-                        <FontAwesomeIcon icon={faNode} color="green" />
+                        <FontAwesomeIcon icon={faNode} color="#3c873a" />
                     </div>
                     <div className="face5">
-                        <FontAwesomeIcon icon={faReact} color="royalblue" />
+                        <FontAwesomeIcon icon={faReact} color="#61dbfb" />
                     </div>
                     <div className="face6">
-                        <FontAwesomeIcon icon={faGitAlt} color="gray" />
+                        <FontAwesomeIcon icon={faGitAlt} color="#333333" />
                     </div>
                 </div>
             </div>
