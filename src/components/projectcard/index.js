@@ -19,7 +19,11 @@ import Typography from '@mui/material/Typography';
 
 export default function ProjectCard({ title, description, stack, img, demo, repo,}) {
 
-  // const testData = ['html', 'css', 'javascript'];
+  const [clicked, setClicked] = React.useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
 
   const stackList = stack.map((tech) => {
     return (
@@ -27,27 +31,28 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
     )
   })
 
+  const styleObj = {
+      maxWidth: clicked ? 1050 : 650,
+      minWidth: 650,
+      minHeight: 250,
+      m: 1.5,
+      boxShadow: 3,
+      borderRadius: 2,
+      bgcolor: 'white',
+      '&:hover': {
+        boxShadow: 20,
+      } 
+  }
+
+  
+  // const handler = (styleObj) => {
+  //   console.log(styleObj)
+  // }
+
   return (
 
     <div className='project-card'>
-      <Card
-          sx={{
-            maxWidth: 500,
-            minWidth: 650,
-            minHeight: 250,
-           
-            m: 1.5,
-            boxShadow: 3,
-            borderRadius: 2,
-            bgcolor: 'white',
-            '&:hover': {
-              boxShadow: 20,
-              // bgcolor: '#bbdefb',
-            }
-            ,}}
-        variant="elevated">
-
-
+      <Card sx={styleObj} variant="elevated">
         <CardContent sx={{p: 1, m:1, bgcolor: ''}}>
 
           {demo ? <a href={demo} target="blank">
@@ -67,14 +72,14 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
             alt="image"
           />}
 
-          <h1 className='project-title'>{title}</h1>
+          <h1 className='project-title'>&#60; {title} &#47;&#62;</h1>
           
       <Accordion>
-        <AccordionSummary
+        <AccordionSummary  onClick={handleClick}
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
-          <h3><FontAwesomeIcon icon={faCircleInfo}/> Project Details <FontAwesomeIcon icon={faCommentDots}/></h3>
+          <h2>Project Details <FontAwesomeIcon icon={faCommentDots}/></h2>
         </AccordionSummary>
 
         <AccordionDetails>
@@ -88,7 +93,7 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
-          <h3><FontAwesomeIcon icon={faLayerGroup}/> Stacklist and Technologies <FontAwesomeIcon icon={faCubes}/></h3>
+          <h2><FontAwesomeIcon icon={faLayerGroup}/> Stacklist and Technologies <FontAwesomeIcon icon={faCubes}/></h2>
         </AccordionSummary>
         <AccordionDetails>
               <ul className='project-stack'>
@@ -103,10 +108,6 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
         
           {demo || repo ? <CardActions className='project-actions'
           sx={{
-            
-            // minWidth: 100,
-            // maxHeight: 550,
-            // maxWidth: 300,
             bgcolor: 'white',
             boxShadow: 10,
             border: 0,
@@ -116,7 +117,6 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
             
             '&:hover': {
               boxShadow: 20,
-              // bgcolor: 'gray',
             }
               }}>
                 
