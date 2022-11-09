@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import ProjectCard from '../projectcard'
 import jsonData from '../../assets/projectData.json';
-import { fontFamily, fontSize } from '@mui/system';
+import { fontFamily, fontSize, spacing } from '@mui/system';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -51,9 +51,10 @@ export default function BasicTabs() {
   };
 
  const tabStyle = {
-  bgcolor: 'darkgrey',
+  // bgcolor: 'darkgrey',
+  fontWeight: 'bold',
   fontSize: 12,
-  fontFamily: 'Courier New'
+  fontFamily: 'Franklin',
  };
 
   const webProjects = jsonData.projects.map((project) => {

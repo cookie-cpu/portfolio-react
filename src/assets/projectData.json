@@ -12,7 +12,7 @@
             "id": "2",
             "title": "Other site",
             "description": "lorem ipsum",
-            "stack": ["html"],
+            "stack": ["html", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss"],
             "img": "",
             "demo": "",
             "repo": ""

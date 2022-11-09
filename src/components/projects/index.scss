@@ -4,14 +4,13 @@
     height: 50%;
     will-change: contents;
     min-height: 50px;
-    
     opacity: 0;
-    top: 5%;
     margin: 0 auto;
     z-index: 1;
     transform-style: preserve-3d;
     animation: fadeIn 1s forwards;
-    animation-delay: 1s;}
+    animation-delay: 1s;
+}
 
 
 .projects {
@@ -20,8 +19,8 @@
 // padding: auto;
 // height: auto;
 // width: auto;
-margin-left: 100px;
-margin-right: 50px;
+margin-left: 5%;
+margin-right: 1%;
 // overflow-x: hidden;
 // overflow-y: auto;
 
@@ -36,17 +35,17 @@ overflow-x: hidden;
 overflow-y: auto;
 text-align: center;
 padding: 20px;
-
 scrollbar-color: #ffd700 #666;
 scrollbar-width: thin; 
 }
 
 
 .title{
+    
     font-family: Impact;
     font-weight: lighter;
     display: flex;
     justify-content: center;
     color: black;
-    font-size: 72px;
+    font-size: 64px;
 }

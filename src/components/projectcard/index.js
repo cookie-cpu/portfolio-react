@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowDown, faCode, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faSitemap, faUser, } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleDown, faArrowDown, faArrowDown19, faArrowDownLong, faArrowPointer, faCircleInfo, faCode, faCodeBranch, faCommentDots, faCubes, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faIndent, faLayerGroup, faSitemap, faUser, } from '@fortawesome/free-solid-svg-icons'
 import { faCodepen, faCodiepie, faStackExchange, faStackOverflow, faStackpath } from '@fortawesome/free-brands-svg-icons';
 import { minHeight } from '@mui/system';
 import Accordion from '@mui/material/Accordion';
@@ -54,7 +54,7 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
             <CardMedia
               title={title}
               component="img"
-              height="175"
+              height="250"
               src={img}
               image={img}
               alt="image"
@@ -67,20 +67,14 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
             alt="image"
           />}
 
-
           <h1 className='project-title'>{title}</h1>
           
-
-
-         
-    
       <Accordion>
-
         <AccordionSummary
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
-          Project Details
+          <h3><FontAwesomeIcon icon={faCircleInfo}/> Project Details <FontAwesomeIcon icon={faCommentDots}/></h3>
         </AccordionSummary>
 
         <AccordionDetails>
@@ -90,20 +84,17 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
       </Accordion>
 
       <Accordion>
-
         <AccordionSummary
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
-          Stacklist and Technologies
+          <h3><FontAwesomeIcon icon={faLayerGroup}/> Stacklist and Technologies <FontAwesomeIcon icon={faCubes}/></h3>
         </AccordionSummary>
-
         <AccordionDetails>
               <ul className='project-stack'>
                 {stackList}
               </ul>
         </AccordionDetails>
-
       </Accordion>
     
 

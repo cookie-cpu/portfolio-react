@@ -15,6 +15,7 @@ export default function Projects () {
             </div>
 
             <Loader type="pacman"></Loader>
+            
         </>
     )
 }
