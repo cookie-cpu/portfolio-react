@@ -3,7 +3,7 @@
         {
             "id": "1",
             "title": "Portfolio Site",
-            "description": "a website to display my projects (site you are currently on). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa. Mauris vitae ultricies leo integer. Lacus vestibulum sed arcu non. Rhoncus mattis rhoncus urna neque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Neque vitae tempus quam pellentesque nec nam. Euismod elementum nisi quis eleifend quam adipiscing. Adipiscing elit ut aliquam purus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.",
+            "description": "A website to display my projects (site you are currently on).\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa. Mauris vitae ultricies leo integer. Lacus vestibulum sed arcu non. Rhoncus mattis rhoncus urna neque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Neque vitae tempus quam pellentesque nec nam. Euismod elementum nisi quis eleifend quam adipiscing. \n\n Adipiscing elit ut aliquam purus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa. Mauris vitae ultricies leo integer. Lacus vestibulum sed arcu non. Rhoncus mattis rhoncus urna neque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Neque vitae tempus quam pellentesque nec nam. Euismod elementum nisi quis eleifend quam adipiscing.\n Adipiscing elit ut aliquam purus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.",
             "stack": ["React", "Scss", "Material UI", "Heroku","FontAwesomeIcons"],
             "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
             "demo": "https://matthewcook-portfolio.herokuapp.com/",
@@ -13,7 +13,7 @@
             "title": "Other site",
             "description": "lorem ipsum",
             "stack": ["html"],
-            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "img": "",
             "demo": "",
             "repo": ""
         },{
@@ -21,7 +21,7 @@
             "title": "third site",
             "description": "lorem ipsum",
             "stack": ["html"],
-            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "img": "",
             "demo": "",
             "repo": ""
         },{
@@ -29,7 +29,7 @@
             "title": "fourth site",
             "description": "lorem ipsum",
             "stack": ["html"],
-            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "img": "",
             "demo": "",
             "repo": ""
         }

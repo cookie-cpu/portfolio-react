@@ -5,12 +5,15 @@ import CardActions from '@mui/material/CardActions';
 import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
-import Alert from '@mui/material/Alert';
-import Stack from '@mui/material/Stack';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCode, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faSitemap, faUser, } from '@fortawesome/free-solid-svg-icons'
+import { faArrowDown, faCode, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faSitemap, faUser, } from '@fortawesome/free-solid-svg-icons'
 import { faCodepen, faCodiepie, faStackExchange, faStackOverflow, faStackpath } from '@fortawesome/free-brands-svg-icons';
 import { minHeight } from '@mui/system';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import Typography from '@mui/material/Typography';
+
 
 
 
@@ -27,20 +30,19 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
   return (
 
     <div className='project-card'>
-
       <Card
           sx={{
             maxWidth: 500,
-            minWidth: 550,
-            minHeight: 550,
-            maxHeight: 700,
+            minWidth: 650,
+            minHeight: 250,
+           
             m: 1.5,
             boxShadow: 3,
             borderRadius: 2,
             bgcolor: 'white',
             '&:hover': {
               boxShadow: 20,
-              bgcolor: '#bbdefb',
+              // bgcolor: '#bbdefb',
             }
             ,}}
         variant="elevated">
@@ -66,14 +68,44 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
           />}
 
 
-
           <h1 className='project-title'>{title}</h1>
+          
+
+
+         
+    
+      <Accordion>
+
+        <AccordionSummary
+          expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
+          aria-controls="panel1a-content"
+          id="panel1a-header">
+          Project Details
+        </AccordionSummary>
+
+        <AccordionDetails>
           <p className='project-description'>{description}</p>
-          <div>
-            <ul className='project-stack'>
-              {stackList}
-            </ul>
-          </div>
+        </AccordionDetails>
+
+      </Accordion>
+
+      <Accordion>
+
+        <AccordionSummary
+          expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
+          aria-controls="panel1a-content"
+          id="panel1a-header">
+          Stacklist and Technologies
+        </AccordionSummary>
+
+        <AccordionDetails>
+              <ul className='project-stack'>
+                {stackList}
+              </ul>
+        </AccordionDetails>
+
+      </Accordion>
+    
 
         </CardContent>
         
