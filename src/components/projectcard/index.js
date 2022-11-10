@@ -32,10 +32,10 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
   })
 
   const styleObj = {
-      maxWidth: clicked ? 1050 : 650,
+      maxWidth: clicked ? 900 : 650,
       minWidth: 650,
-      minHeight: 250,
-      m: 1.5,
+      // minHeight: 50,
+      m: 1,
       boxShadow: 3,
       borderRadius: 2,
       bgcolor: 'white',
