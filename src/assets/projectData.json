@@ -56,7 +56,7 @@
             "id": "1",
             "title": "War Tank",
             "description": "A real-time multiplayer game running on Phaser3 and hosted on Heroku.\n Allows users to create real-time lobbies using generated codes and socket.io connections. \n\nPart of the final project for the lighthouse labs dev bootcamp.",
-            "stack": ["Phaser3","Socket.io","ExpressJS","Node","Webpack","Heroku","Aesprite"],
+            "stack": ["Phaser3, Socket.io","ExpressJS, Node,", "Webpack, Heroku","Aesprite"],
             "img": "https://raw.githubusercontent.com/luke-yin/tanks-final/master/docs/title.png",
             "demo": "https://lhltanks.herokuapp.com/",
             "repo": "https://github.com/ermurray/tanks-final"
