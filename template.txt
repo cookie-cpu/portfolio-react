@@ -1,0 +1,9 @@
+,{
+     "id": "x",
+    "title": "Site",
+    "description": "",
+     "stack": ["", ""],
+     "img": "",
+     "demo": "",
+    "repo": ""
+}

@@ -3,45 +3,61 @@
         {
             "id": "1",
             "title": "Portfolio Site",
-            "description": "A website to display my projects (site you are currently on).\n\n Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa. Mauris vitae ultricies leo integer. Lacus vestibulum sed arcu non. Rhoncus mattis rhoncus urna neque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Neque vitae tempus quam pellentesque nec nam. Euismod elementum nisi quis eleifend quam adipiscing. \n\n Adipiscing elit ut aliquam purus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna et pharetra pharetra massa. Mauris vitae ultricies leo integer. Lacus vestibulum sed arcu non. Rhoncus mattis rhoncus urna neque. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Neque vitae tempus quam pellentesque nec nam. Euismod elementum nisi quis eleifend quam adipiscing.\n Adipiscing elit ut aliquam purus. Facilisi cras fermentum odio eu feugiat pretium nibh ipsum consequat.",
-            "stack": ["React", "Scss", "Material UI", "Heroku","FontAwesomeIcons"],
+            "description": "A website to display my projects (you're currently here!).\n\nBuilt using React and hosted on Netlify, this site was designed as a fun project to test my skills and display my projects. \n\n ",
+            "stack": ["React, SCSS", "Material UI, FontAwesomeIcons", "Netlify"],
             "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
-            "demo": "https://matthewcook-portfolio.herokuapp.com/",
+            "demo": "https://main--matthew-cook-portfolio.netlify.app/",
             "repo": "https://github.com/cookie-cpu/portfolio-react"
         },{
             "id": "2",
-            "title": "Other site",
-            "description": "lorem ipsum",
-            "stack": ["html", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss", "Scss"],
-            "img": "",
+            "title": "Scheduler",
+            "description": "",
+            "stack": ["React, SCSS, Axios, Node","Cypress, Jest, Storybook"],
+            "img": "https://raw.githubusercontent.com/cookie-cpu/LHL-Scheduler/master/docs/create.gif",
             "demo": "",
-            "repo": ""
+            "repo": "https://github.com/cookie-cpu/LHL-Scheduler"
         },{
             "id": "3",
-            "title": "third site",
-            "description": "lorem ipsum",
-            "stack": ["html"],
+            "title": "Galaxy Seller",
+            "description": "",
+            "stack": ["HTML, EJS, SASS", "Node, Express, PostgreSQL"],
             "img": "",
             "demo": "",
-            "repo": ""
+            "repo": "https://github.com/cookie-cpu/buy-sell-midterm"
         },{
             "id": "4",
-            "title": "fourth site",
-            "description": "lorem ipsum",
-            "stack": ["html"],
+            "title": "Tweeter",
+            "description": "",
+            "stack": ["HTML, EJS, SASS", " Ajax, JQuery"," NodeJS, Express"],
+            "img": "https://raw.githubusercontent.com/cookie-cpu/tweeter/master/docs/2.png",
+            "demo": "",
+            "repo": "https://github.com/cookie-cpu/tweeter"
+        },{
+            "id": "5",
+            "title": "TodoList",
+            "description": "",
+            "stack": ["React, SCSS", "NodeJS"],
             "img": "",
             "demo": "",
-            "repo": ""
+            "repo": "https://github.com/cookie-cpu/TodoListReact"
+        },{
+            "id": "6",
+            "title": "Discord Bot",
+            "description": "",
+            "stack": ["NodeJS, Express","Discord API"],
+            "img": "",
+            "demo": "",
+            "repo": "https://github.com/cookie-cpu/discord-bot"
         }
         
     ],
     "games" : [
         {
             "id": "1",
-            "title": "tank game",
-            "description": "tanks",
-            "stack": ["phaser"],
-            "img": "",
+            "title": "War Tank",
+            "description": "A real-time multiplayer game running on Phaser3 and hosted on Heroku.\n Allows users to create real-time lobbies using generated codes and socket.io connections. \n\nPart of the final project for the lighthouse labs dev bootcamp.",
+            "stack": ["Phaser3","Socket.io","ExpressJS","Node","Webpack","Heroku","Aesprite"],
+            "img": "https://raw.githubusercontent.com/luke-yin/tanks-final/master/docs/title.png",
             "demo": "https://lhltanks.herokuapp.com/",
             "repo": "https://github.com/ermurray/tanks-final"
         }
@@ -49,12 +65,12 @@
     "other" : [
         {
             "id": "1",
-            "title": "homework app",
-            "description": "A full stack database app built using java and SQL. IB computer science higher level final project.",
-            "stack": ["java","SQL"],
+            "title": "Java Homework App",
+            "description": "A full stack desktop database app built using Java and SQL. IB computer science higher level final project.",
+            "stack": ["Java","SQL","SQLite","JWindow","Jframe"],
             "img": "",
             "demo": "",
-            "repo": "https://github.com/"
+            "repo": ""
         }
     ]
 }
