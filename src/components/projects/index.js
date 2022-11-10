@@ -14,7 +14,7 @@ export default function Projects () {
                         <TabPanel /> 
             </div>
 
-            <Loader type="pacman"></Loader>
+            {/* <Loader type="pacman"></Loader> */}
             
         </>
     )
