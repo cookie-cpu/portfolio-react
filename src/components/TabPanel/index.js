@@ -8,6 +8,8 @@ import Box from '@mui/material/Box';
 import ProjectCard from '../projectcard'
 import jsonData from '../../assets/projectData.json';
 import { fontFamily, fontSize, spacing } from '@mui/system';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode, faDice, faDiceD20, faDiceD6, faGamepad, faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -53,7 +55,7 @@ export default function BasicTabs() {
  const tabStyle = {
   // bgcolor: 'darkgrey',
   fontWeight: 'bold',
-  fontSize: 12,
+  fontSize: 14,
   fontFamily: 'Franklin',
  };
 
@@ -101,17 +103,30 @@ export default function BasicTabs() {
     )
   })
 
+  const label1 = 
+    <>Web Development
+      <FontAwesomeIcon icon={faGlobe}/>
+    </>
   
+  const label2 = 
+  <>Games
+    <FontAwesomeIcon icon={faGamepad}/>
+  </>
+
+  const label3 = 
+  <>Other
+    <FontAwesomeIcon icon={faDiceD6}/>
+  </>
+
   return (
     <Box className='tab-bar' sx={{ width: '100%' }}>
-
 
           <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} centered>
 
-              <Tab sx={tabStyle} label={"Web Development"} {...a11yProps(0)} />
-              <Tab sx={tabStyle} label="Games" {...a11yProps(1)} />
-              <Tab sx={tabStyle} label="Other" {...a11yProps(2)} />
+              <Tab sx={tabStyle} label={label1} {...a11yProps(0)} />
+              <Tab sx={tabStyle} label={label2} {...a11yProps(1)} />
+              <Tab sx={tabStyle} label={label3} {...a11yProps(2)} />
 
             </Tabs>
           </Box>
