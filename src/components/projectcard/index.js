@@ -12,7 +12,7 @@ import { minHeight } from '@mui/system';
 import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
+
 
 
 
@@ -30,7 +30,7 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
       <li key={tech[0]}><FontAwesomeIcon icon={faCode} /> {tech}</li>
     )
   })
-
+  
   const styleObj = {
       maxWidth: clicked ? 900 : 650,
       minWidth: 650,
@@ -43,11 +43,6 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
         boxShadow: 20,
       } 
   }
-
-  
-  // const handler = (styleObj) => {
-  //   console.log(styleObj)
-  // }
 
   return (
 

@@ -5,6 +5,7 @@ import {fa0, faBookAtlas, faBookJournalWhills, faBookOpen, faContactBook, faEnve
 import {faLinkedin, faGithub, faReadme} from '@fortawesome/free-brands-svg-icons'
 // import Logo1 from '.../src/assets/Matthew Cook.png
 import Logo1 from '../../assets//MatthewCookLogo.png'
+import Logo from '../../assets//MatthewCookDevLogo.png'
 
 
 
@@ -13,7 +14,7 @@ const SideBar = () => {
     return (
     <div className='nav-bar'>
         <Link className='logo' to='/'>
-            <img className='logo-image' src={Logo1} alt="logo" />
+            <img className='logo-image' src={Logo} alt="logo" />
             {/* <p className="sub-logo">Matthew Cook</p> */}
             {/* <img className="sub-logo"src={Logo2} alt="logo2" /> */}
         </Link>

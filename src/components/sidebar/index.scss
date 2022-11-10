@@ -19,14 +19,17 @@
         text-align: center;
       }
       img {
+        transition: .5s;
         display: block;
         margin: 5px auto;
-        width: 52px;
+        width: 60px;
         height: auto;
   
         &.sub-logo {
           width: 50px;
         }
+      }:hover{
+        transform: scale(.9);
       }
     }
   
