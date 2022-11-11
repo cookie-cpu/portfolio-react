@@ -3,7 +3,7 @@
         {
             "id": "1",
             "title": "Portfolio Site",
-            "description": "A website to display my projects (you're currently here!).\n\nBuilt using React and hosted on Netlify, this site was designed as a fun project to test my skills and display my projects. \n\n ",
+            "description": "A website to display my projects and experiment (you're currently here!).\n\nBuilt using React, SCSS and MaterialUI components and hosted on Netlify.\n\n This site was designed as a fun project to test my skills and display my projects. I loved experimenting with various ways to display data and constantly fiddled with different ways to animate components to create a responsive and user-friendly site.\n\n ",
             "stack": ["React, SCSS", "Material UI, FontAwesomeIcons", "Netlify"],
             "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
             "demo": "https://main--matthew-cook-portfolio.netlify.app/",
@@ -11,7 +11,7 @@
         },{
             "id": "2",
             "title": "Scheduler",
-            "description": "",
+            "description": "Scheduler is a single-page react app with testing suite for managing booking reservations and timeslots through API calls.",
             "stack": ["React, SCSS, Axios, Node","Cypress, Jest, Storybook"],
             "img": "https://raw.githubusercontent.com/cookie-cpu/LHL-Scheduler/master/docs/create.gif",
             "demo": "",
@@ -40,14 +40,6 @@
             "img": "",
             "demo": "",
             "repo": "https://github.com/cookie-cpu/TodoListReact"
-        },{
-            "id": "6",
-            "title": "Discord Bot",
-            "description": "",
-            "stack": ["NodeJS, Express","Discord API"],
-            "img": "",
-            "demo": "",
-            "repo": "https://github.com/cookie-cpu/discord-bot"
         }
         
     ],
@@ -71,6 +63,14 @@
             "img": "",
             "demo": "",
             "repo": ""
+        },{
+            "id": "2",
+            "title": "Discord Bot",
+            "description": "",
+            "stack": ["NodeJS, Express","Discord API"],
+            "img": "",
+            "demo": "",
+            "repo": "https://github.com/cookie-cpu/discord-bot"
         }
     ]
 }
