@@ -55,8 +55,8 @@ export default function BasicTabs() {
  const tabStyle = {
   // bgcolor: 'darkgrey',
   fontWeight: 'bold',
-  fontSize: 14,
-  fontFamily: 'Franklin',
+  fontSize: 15,
+  // fontFamily: 'Franklin',
  };
 
   const webProjects = jsonData.projects.map((project) => {
@@ -104,7 +104,7 @@ export default function BasicTabs() {
   })
 
   const label1 = 
-    <>Web Development
+    <>Web Dev
       <FontAwesomeIcon icon={faGlobe}/>
     </>
   
