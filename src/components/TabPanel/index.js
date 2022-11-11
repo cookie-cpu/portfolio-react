@@ -83,6 +83,7 @@ export default function BasicTabs() {
             key={project.id}
             title={project.title}
             description={project.description}
+            details={project.details}
             stack={project.stack}
             img={project.img}
             demo={project.demo}
@@ -98,6 +99,7 @@ export default function BasicTabs() {
             key={project.id}
             title={project.title}
             description={project.description}
+            details={project.details}
             stack={project.stack}
             img={project.img}
             demo={project.demo}
