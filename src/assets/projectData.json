@@ -5,13 +5,13 @@
             "title": "Portfolio Site",
             "description": "A website to display my projects and experiment (you're currently here!).\n\nBuilt using React, SCSS and MaterialUI components and hosted on Netlify.\n\n This site was designed as a fun project to test my skills and display my projects. I loved experimenting with various ways to display data and constantly fiddled with different ways to animate components to create a responsive and user-friendly site.\n\n ",
             "stack": ["React, SCSS", "Material UI, FontAwesomeIcons", "Netlify"],
-            "img": "/static/media/portfoliosite.96d7de1c2b68464f61d5.png",
+            "img": "https://raw.githubusercontent.com/cookie-cpu/portfolio-react/main/src/assets/projects/portfoliosite.png",
             "demo": "https://main--matthew-cook-portfolio.netlify.app/",
             "repo": "https://github.com/cookie-cpu/portfolio-react"
         },{
             "id": "2",
-            "title": "Scheduler",
-            "description": "Scheduler is a single-page react app with testing suite for managing booking reservations and timeslots through API calls.",
+            "title": "Appointment Scheduler",
+            "description": "Scheduler is a single-page react app with testing suite for managing booking reservations and timeslots through API calls. Features reactive UI with loading and error responses for intuitive user experience.\n\nFeatures complete testing suite including storybook to test each react component individually and cypress to ensure end-to-end experience is functional.",
             "stack": ["React, SCSS, Axios, Node","Cypress, Jest, Storybook"],
             "img": "https://raw.githubusercontent.com/cookie-cpu/LHL-Scheduler/master/docs/create.gif",
             "demo": "",
@@ -19,27 +19,35 @@
         },{
             "id": "3",
             "title": "Galaxy Seller",
-            "description": "",
+            "description": "A full-stack multipage app allowing users to log in and post items for sale. Features full CRUD functionality to the backend database and includes a messaging feature connecting users with an inbox of messages.",
             "stack": ["HTML, EJS, SASS", "Node, Express, PostgreSQL"],
-            "img": "",
+            "img": "https://raw.githubusercontent.com/cookie-cpu/buy-sell-midterm/master/planning/Buy%3ASell%20ERD.png",
             "demo": "",
             "repo": "https://github.com/cookie-cpu/buy-sell-midterm"
         },{
             "id": "4",
             "title": "Tweeter",
-            "description": "",
-            "stack": ["HTML, EJS, SASS", " Ajax, JQuery"," NodeJS, Express"],
+            "description": "A singe-page twitter clone built using HTML and CSS. Jquery and AJAX were used to dynamically populate the sites data from the MongoDB backend server.",
+            "stack": ["HTML, CSS", " AJAX, JQuery"," NodeJS, Express, MongoDB"],
             "img": "https://raw.githubusercontent.com/cookie-cpu/tweeter/master/docs/2.png",
             "demo": "",
             "repo": "https://github.com/cookie-cpu/tweeter"
         },{
             "id": "5",
             "title": "TodoList",
-            "description": "",
+            "description": "A simple react app allowing users to add, sort and remove items from a list. Features local storage saving to maintain list data between sessions.",
             "stack": ["React, SCSS", "NodeJS"],
-            "img": "",
+            "img": "https://raw.githubusercontent.com/cookie-cpu/portfolio-react/main/src/assets/projects/todolist.gif",
             "demo": "",
             "repo": "https://github.com/cookie-cpu/TodoListReact"
+        },{
+            "id": "6",
+            "title": "TinyApp",
+            "description": "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs and keep track of saved links. It has a fully functional register and login system with encrypted cookies and a hashed passwords. Uses an intuitive REST api and URL parameters for easy redirection of links.",
+            "stack": ["EJS, CSS, RESTful API","Bycrpt, cookie-session, body-parser", "NodeJS, Express"],
+            "img": "https://raw.githubusercontent.com/cookie-cpu/tinyapp/main/docs/urls_page.png",
+            "demo": "",
+            "repo": "https://github.com/cookie-cpu/tinyapp"
         }
         
     ],
@@ -58,17 +66,17 @@
         {
             "id": "1",
             "title": "Java Homework App",
-            "description": "A full stack desktop database app built using Java and SQL. IB computer science higher level final project.",
-            "stack": ["Java","SQL","SQLite","JWindow","Jframe"],
+            "description": "A full stack desktop database app built using Java and SQL. Final project for Higher Level IB computer science",
+            "stack": ["Java","SQL, SQLite","Jframe, Jwindow"],
             "img": "",
             "demo": "",
             "repo": ""
         },{
             "id": "2",
             "title": "Discord Bot",
-            "description": "",
+            "description": "A basic discord bot built to experiment with the discord API. Used to practice hosting a bot from a backend express server which would automate interactions from a third-party API.",
             "stack": ["NodeJS, Express","Discord API"],
-            "img": "",
+            "img": "https://raw.githubusercontent.com/cookie-cpu/portfolio-react/main/src/assets/projects/discordbot2.png",
             "demo": "",
             "repo": "https://github.com/cookie-cpu/discord-bot"
         }

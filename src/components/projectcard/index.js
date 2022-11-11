@@ -6,7 +6,7 @@ import CardMedia from '@mui/material/CardMedia';
 import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faArrowCircleDown, faArrowDown, faArrowDown19, faArrowDownLong, faArrowPointer, faCircleInfo, faCode, faCodeBranch, faCommentDots, faCubes, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faIndent, faLayerGroup, faSitemap, faUser, } from '@fortawesome/free-solid-svg-icons'
+import { faArrowCircleDown, faArrowDown, faArrowDown19, faArrowDownLong, faArrowPointer, faCircleInfo, faCode, faCodeBranch, faCommentDots, faCubes, faEnvelope, faExternalLink, faFileCode, faFolder, faHome, faIndent, faLayerGroup, faSitemap, faUser, faWrench, } from '@fortawesome/free-solid-svg-icons'
 import { faCodepen, faCodiepie, faStackExchange, faStackOverflow, faStackpath } from '@fortawesome/free-brands-svg-icons';
 import { minHeight } from '@mui/system';
 import Accordion from '@mui/material/Accordion';
@@ -17,7 +17,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 
 
 
-export default function ProjectCard({ title, description, stack, img, demo, repo,}) {
+export default function ProjectCard({id, title, description, details, stack, img, demo, repo,}) {
 
   const [clicked, setClicked] = React.useState(false);
 
@@ -33,9 +33,9 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
   
   const styleObj = {
       // maxWidth: clicked ? 900 : 650,
-      maxWidth: 650,
-      minWidth: 650,
-      // maxHeight: 1050,
+      maxWidth: 600,
+      minWidth: 550,
+      // maxHeight: clicked ? 800 : NaN,
       m: 1,
       boxShadow: 3,
       borderRadius: 2,
@@ -48,7 +48,7 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
   return (
 
     <>
-      <Card sx={styleObj} variant="elevated" className='project-card'>
+      <Card sx={styleObj} variant="elevated" className='project-card'  onClick={handleClick}>
         <CardContent sx={{p: 1, m:1, bgcolor: ''}}>
 
           {demo ? 
@@ -72,25 +72,36 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
           <h1 className='project-title'>&#60; {title} &#47;&#62;</h1>
           
       <Accordion>
-        <AccordionSummary  onClick={handleClick}
+        <AccordionSummary 
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
-          <h2>Project Details <FontAwesomeIcon icon={faCommentDots}/></h2>
+          <h2>About <FontAwesomeIcon icon={faCommentDots}/></h2>
         </AccordionSummary>
-
         <AccordionDetails>
           <p className='project-description'>{description}</p>
         </AccordionDetails>
-
       </Accordion>
 
+      { details ? <Accordion>
+        <AccordionSummary
+          expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
+          aria-controls={`panel1a-content${id}`}
+          id={`panel1a-header${id}`}>
+          <h2>Tech Stuff <FontAwesomeIcon icon={faWrench}/></h2>
+        </AccordionSummary>
+        <AccordionDetails>
+              <p className='project-description'>{details}</p>
+        </AccordionDetails>
+      </Accordion> : false
+      }
+          
       <Accordion>
         <AccordionSummary
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
-          aria-controls="panel1a-content"
-          id="panel1a-header">
-          <h2><FontAwesomeIcon icon={faLayerGroup}/> Stacklist and Technologies <FontAwesomeIcon icon={faCubes}/></h2>
+          aria-controls={`panel1a-content${id}`}
+          id={`panel1a-header${id}`}>
+          <h2>Stacklist <FontAwesomeIcon icon={faLayerGroup}/></h2>
         </AccordionSummary>
         <AccordionDetails>
               <ul className='project-stack'>
@@ -98,7 +109,10 @@ export default function ProjectCard({ title, description, stack, img, demo, repo
               </ul>
         </AccordionDetails>
       </Accordion>
-    
+      
+      
+      
+      
 
         </CardContent>
         

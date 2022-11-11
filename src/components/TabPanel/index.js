@@ -62,10 +62,12 @@ export default function BasicTabs() {
   const webProjects = jsonData.projects.map((project) => {
     return (
       
-        <ProjectCard 
+        <ProjectCard
+            id={project.id} 
             key={project.id}
             title={project.title}
             description={project.description}
+            details={project.details}
             stack={project.stack}
             img={project.img}
             demo={project.demo}
@@ -77,6 +79,7 @@ export default function BasicTabs() {
   const gameProjects = jsonData.games.map((project) => {
     return (
         <ProjectCard 
+            id={project.id} 
             key={project.id}
             title={project.title}
             description={project.description}
@@ -91,6 +94,7 @@ export default function BasicTabs() {
   const miscProjects = jsonData.other.map((project) => {
     return (
         <ProjectCard 
+            id={project.id} 
             key={project.id}
             title={project.title}
             description={project.description}
