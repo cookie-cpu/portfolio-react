@@ -17,6 +17,14 @@
             "demo": "",
             "repo": "https://github.com/cookie-cpu/LHL-Scheduler"
         },{
+            "id": "7",
+            "title": "Product Pager",
+            "description": "Built using NextJS and Typescript react,",
+            "stack": ["NextJS, Typescript, ","Axios", "Vercel"],
+            "img": "",
+            "demo": "https://product-pager-2mtl9t2vb-cookie-cpu.vercel.app/",
+            "repo": "https://github.com/cookie-cpu/product-pager"
+        },{
             "id": "3",
             "title": "Galaxy Seller",
             "description": "A full-stack multipage app allowing users to log in and post items for sale. Features full CRUD functionality to the backend database and includes a messaging feature connecting users with an inbox of messages.",
