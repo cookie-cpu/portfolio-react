@@ -25,6 +25,14 @@
             "demo": "https://product-pager.vercel.app/",
             "repo": "https://github.com/cookie-cpu/product-pager"
         },{
+            "id": "8",
+            "title": "Jungler",
+            "description": "",
+            "stack": ["Ruby, Rails"],
+            "img": "",
+            "demo": "",
+            "repo": ""
+        },{
             "id": "3",
             "title": "Galaxy Seller",
             "description": "A full-stack multipage app allowing users to log in and post items for sale. Features full CRUD functionality to the backend database and includes a messaging feature connecting users with an inbox of messages.",
@@ -56,6 +64,14 @@
             "img": "https://raw.githubusercontent.com/cookie-cpu/tinyapp/main/docs/urls_page.png",
             "demo": "",
             "repo": "https://github.com/cookie-cpu/tinyapp"
+        },{
+            "id": "9",
+            "title": "FinstaGram",
+            "description": "",
+            "stack": ["Ruby, Rails"],
+            "img": "",
+            "demo": "",
+            "repo": ""
         }
         
     ],
