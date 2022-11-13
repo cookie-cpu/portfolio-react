@@ -22,7 +22,7 @@
             "description": "Built using NextJS and Typescript react,",
             "stack": ["NextJS, Typescript, ","Axios", "Vercel"],
             "img": "",
-            "demo": "https://product-pager-2mtl9t2vb-cookie-cpu.vercel.app/",
+            "demo": "https://product-pager.vercel.app/",
             "repo": "https://github.com/cookie-cpu/product-pager"
         },{
             "id": "3",
