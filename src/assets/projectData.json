@@ -72,6 +72,14 @@
             "img": "",
             "demo": "",
             "repo": ""
+        },{
+            "id": "10",
+            "title": "SpaceX Tracker",
+            "description": "",
+            "stack": ["NextJS", "GraphQL"],
+            "img": "",
+            "demo": "https://spacex-launch-tracker.vercel.app/",
+            "repo": "https://github.com/cookie-cpu/spacex-launch-tracker"
         }
         
     ],
