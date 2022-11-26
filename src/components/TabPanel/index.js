@@ -10,6 +10,7 @@ import jsonData from '../../assets/projectData.json';
 import { fontFamily, fontSize, spacing } from '@mui/system';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCode, faDice, faDiceD20, faDiceD6, faGamepad, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { red } from '@mui/material/colors';
 
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -55,7 +56,9 @@ export default function BasicTabs() {
  const tabStyle = {
   // bgcolor: 'darkgrey',
   fontWeight: 'bold',
-  fontSize: 15,
+  fontSize: 20,
+  m: 1,
+  p: 1,
   // fontFamily: 'Franklin',
  };
 
@@ -127,7 +130,7 @@ export default function BasicTabs() {
   return (
     <Box className='tab-bar' sx={{ width: '100%' }}>
 
-          <Box sx={{ borderBottom: 1, borderColor: 'divider' }}>
+          <Box sx={{ borderBottom: 3, borderColor: 'divider' }}>
             <Tabs value={value} onChange={handleChange} centered>
 
               <Tab sx={tabStyle} label={label1} {...a11yProps(0)} />
@@ -137,20 +140,20 @@ export default function BasicTabs() {
             </Tabs>
           </Box>
 
-          <TabPanel value={value} index={0} className='project-tab'>
-            <div className='projects'>
-                {webProjects}
+          <TabPanel value={value} index={0} className='project-ta'>
+          <div className='project-tab'>
+            {webProjects}
             </div>
           </TabPanel>
 
-          <TabPanel value={value} index={1}  className='project-tab'>
-            <div className='projects'>
+          <TabPanel value={value} index={1}  className=''>
+            <div className='project-tab'>
               {gameProjects}
             </div>
           </TabPanel>
 
-          <TabPanel value={value} index={2}  className='project-tab'>
-            <div className='projects'>
+          <TabPanel value={value} index={2}  className=''>
+            <div className='project-tab'>
               {miscProjects}
             </div>
           </TabPanel>

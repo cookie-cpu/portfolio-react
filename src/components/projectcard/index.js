@@ -33,12 +33,12 @@ export default function ProjectCard({id, title, description, details, stack, img
   
   const styleObj = {
       // maxWidth: clicked ? 900 : 650,
-      maxWidth: 600,
-      minWidth: 550,
+      maxWidth: 550,
+      minWidth: 400,
       // maxHeight: clicked ? 800 : NaN,
       m: 1,
       boxShadow: 3,
-      borderRadius: 2,
+      borderRadius: 5,
       bgcolor: 'white',
       '&:hover': {
         boxShadow: 20,
