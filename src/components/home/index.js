@@ -14,18 +14,42 @@ import {
     faNode,
     faReact,
 } from '@fortawesome/free-brands-svg-icons'
+import AnimatedLetters from "../animatedLetters";
+import { useState, useEffect } from "react";
+import Glitch from "../glitch/Glitch";
 
 const Home = () => {
+    const [letterClass, setLetterClass] = useState('text-animate');
+
+    useEffect(() => {
+        setTimeout(() => {
+          setLetterClass('text-animate-hover');
+        }, 4000);
+      }, []);
 
     return (
     <>
         <div className="container home-page">
             <div className="text-zone">
-                <h1>Hi!</h1>
+                <h1>
+                    <span className={letterClass}>H</span>
+                    <span className={`${letterClass} _12`}>i</span>
+                    <span className={`${letterClass} _13`}> </span>
+                    <span className={`${letterClass} _14`}>I</span>
+                    <span className={`${letterClass} _15`}>'m</span>
+                    <span className={`${letterClass} _16`}> </span>
+                </h1>
 
-                <h1>I'm Matthew Cook</h1>
-                <h1>Web Developer</h1>
-                <h2>Welcome to my website</h2>
+                <h1>
+                     <span className={`${letterClass} _17`}>Matthew </span>
+                     <span className={`${letterClass} _18`}></span>
+                     <span className={`${letterClass} _19`}>Cook </span>
+                     </h1>
+                <h1><span className={`${letterClass} _20`}>Web Developer </span></h1>
+                <h2>
+                    {/* <Glitch text="welcome to my website" subtitle=""/> */}
+                    Welcome to my website
+                </h2>
 
                 <div>
                     <Link to='/contact' className="flat-button">Contact <FontAwesomeIcon icon={faEnvelope} color="4d4d4e" /> </Link>

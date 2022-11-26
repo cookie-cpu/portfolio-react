@@ -30,7 +30,7 @@ const Contact = () => {
         <>
             <div className='container contact-page'>
                 <div className='text-zone'>
-                    <h1>Contact</h1>
+                    <h1>Contact Me!</h1>
                     <p>
                         Feel free to contact me via my Linkedin <FontAwesomeIcon icon={faLinkedin} /> or Email <FontAwesomeIcon icon={faEnvelope} /> using the links or form below.
                     </p>
@@ -47,8 +47,10 @@ const Contact = () => {
                                 </a>
                             </li>
                         </ul>
+                        
                     </div>
 
+                    
                     <div className="contact-form">
                         <form ref={form} onSubmit={sendEmail}>
                             <ul>
@@ -84,8 +86,8 @@ const Contact = () => {
                             </ul>
                         </form>
                     </div>
-
                 </div>
+                
             </div>
 
 
