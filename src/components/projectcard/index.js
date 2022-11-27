@@ -76,7 +76,7 @@ export default function ProjectCard({id, title, description, details, stack, img
           expandIcon={<FontAwesomeIcon icon={faArrowDown}/>}
           aria-controls="panel1a-content"
           id="panel1a-header">
-          <h2>About <FontAwesomeIcon icon={faCommentDots}/></h2>
+          <h2>About <FontAwesomeIcon icon={faCommentDots} flip="horizontal"/></h2>
         </AccordionSummary>
         <AccordionDetails>
           <p className='project-description'>{description}</p>
@@ -117,22 +117,25 @@ export default function ProjectCard({id, title, description, details, stack, img
         </CardContent>
         
         
-          {demo || repo ? <CardActions className='project-actions'
-          sx={{
-            bgcolor: 'white',
-            boxShadow: 10,
-            border: 0,
-            borderRadius: 5,
-            p: 2,
-            m: 1, 
-            '&:hover': {
-              boxShadow: 20,
-            }
-              }}> 
-            {demo ? <Button variant="contained" href={demo} target="blank" size="medium" endIcon={<FontAwesomeIcon icon={faExternalLink} />}>Live Demo</Button> : false}
-            {repo ? <Button variant="contained" href={repo} target="blank" size="medium" endIcon={<FontAwesomeIcon icon={faCode} />}>Code Repo</Button> : false}
-        </CardActions>:
-         false }
+          {demo || repo ? 
+
+            <CardActions className='project-actions'
+            sx={{
+              // bgcolor: '#999',
+              boxShadow: 10,
+              border: 0,
+              borderRadius: 5,
+              p: 2,
+              m: 1, 
+              '&:hover': {
+                boxShadow: 20,
+              }
+                }}> 
+              {demo && <Button variant="contained" href={demo} target="blank" size="medium" endIcon={<FontAwesomeIcon icon={faExternalLink} />}>Live Demo</Button>}
+              {repo && <Button variant="contained" href={repo} target="blank" size="medium" endIcon={<FontAwesomeIcon icon={faCode} />}>Code Repo</Button>}
+          </CardActions>
+
+        :null }
 
       </Card>
     </>
