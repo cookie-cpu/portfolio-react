@@ -3,7 +3,7 @@
         {
             "id": "1",
             "title": "Portfolio Site",
-            "description": "A website to display my projects and experiment (you're currently here!).\n\nBuilt using React, SCSS and MaterialUI components and hosted on Netlify.\n\n This site was designed as a fun project to test my skills and display my projects. I loved experimenting with various ways to display data and constantly fiddled with different ways to animate components to create a responsive and user-friendly site.\n\n ",
+            "description": "A website to display my projects and experiment (you're currently here!).\n\nBuilt using React, SCSS and MaterialUI components and hosted on Netlify.\n\n This site is designed as a fun project to test my skills and display my projects. I enjoy experimenting with various ways to display data and constantly fiddle with different ways to animate components to create a responsive and user-friendly site.\n\n ",
             "stack": ["React, SCSS", "Material UI, FontAwesomeIcons", "Netlify"],
             "img": "https://raw.githubusercontent.com/cookie-cpu/portfolio-react/main/src/assets/projects/portfoliosite.png",
             "demo": "https://main--matthew-cook-portfolio.netlify.app/",
@@ -11,7 +11,7 @@
         },{
             "id": "2",
             "title": "Appointment Scheduler",
-            "description": "Scheduler is a single-page react app with testing suite for managing booking reservations and timeslots through API calls. Features reactive UI with loading and error responses for intuitive user experience.\n\nFeatures complete testing suite including storybook to test each react component individually and cypress to ensure end-to-end experience is functional.",
+            "description": "Scheduler is a single-page react app with integrated testing suite for managing booking reservations and timeslots through API calls. Features reactive UI with loading and error responses for intuitive user experience.\n\nThe app allows users to easily select a timeslot, interviewer and allow them to write their name. Uses error checking with the backend api for valid data and the ability to edit fields. \n\nProject has complete testing suite including storybook to test each react component individually and cypress to ensure end-to-end experience is functional.",
             "stack": ["React, SCSS, Axios, Node","Cypress, Jest, Storybook"],
             "img": "https://raw.githubusercontent.com/cookie-cpu/LHL-Scheduler/master/docs/create.gif",
             "demo": "",
@@ -19,19 +19,11 @@
         },{
             "id": "7",
             "title": "Product Pager",
-            "description": "Built using NextJS and Typescript react,",
-            "stack": ["NextJS, Typescript, ","Axios", "Vercel"],
-            "img": "",
+            "description": "Built using NextJS and Typescript react, this project fetches JSON data and dynamically displays the data.",
+            "stack": ["NextJS, Typescript ","Axios", "Vercel"],
+            "img": "https://raw.githubusercontent.com/cookie-cpu/portfolio-react/main/src/assets/projects/productpager.png",
             "demo": "https://product-pager.vercel.app/",
             "repo": "https://github.com/cookie-cpu/product-pager"
-        },{
-            "id": "8",
-            "title": "Jungler",
-            "description": "",
-            "stack": ["Ruby, Rails"],
-            "img": "",
-            "demo": "",
-            "repo": ""
         },{
             "id": "3",
             "title": "Galaxy Seller",
@@ -59,7 +51,7 @@
         },{
             "id": "6",
             "title": "TinyApp",
-            "description": "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs and keep track of saved links. It has a fully functional register and login system with encrypted cookies and a hashed passwords. Uses an intuitive REST api and URL parameters for easy redirection of links.",
+            "description": "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs and keep track of saved redirect links. It has a fully functional register and login system with encrypted cookies and a hashed passwords. Uses an intuitive REST api and URL parameters for easy redirection of links.",
             "stack": ["EJS, CSS, RESTful API","Bycrpt, cookie-session, body-parser", "NodeJS, Express"],
             "img": "https://raw.githubusercontent.com/cookie-cpu/tinyapp/main/docs/urls_page.png",
             "demo": "",
@@ -67,9 +59,9 @@
         },{
             "id": "10",
             "title": "SpaceX Tracker",
-            "description": "",
+            "description": "A simple app built using NextJS and the official SpaceX api. Uses a GraphQL query to cleanly display information about recent launches. ",
             "stack": ["NextJS", "GraphQL"],
-            "img": "",
+            "img": "https://raw.githubusercontent.com/cookie-cpu/portfolio-react/main/src/assets/projects/launchtracker.png",
             "demo": "https://spacex-launch-tracker.vercel.app/",
             "repo": "https://github.com/cookie-cpu/spacex-launch-tracker"
         }
@@ -80,7 +72,7 @@
             "id": "1",
             "title": "War Tank",
             "description": "A real-time multiplayer game running on Phaser3 and hosted on Heroku.\n Allows users to create real-time lobbies using generated codes and socket.io connections. \n\nPart of the final project for the lighthouse labs dev bootcamp.",
-            "details":"Using a code generator function from our backend server, users create lobbies that are identifiable by these unique IDs. The intention was to be able to quickly create a password protected lobby that can easily be shared for friends and famiies to join and play together.\n\n Some of the hardest logistical challenges came from integrating the websocket library into the phaser javascript game engine.",
+            "details":"Using a code generator function from our backend server, users create lobbies that are identifiable by these unique IDs. The intention was to be able to quickly create a password protected lobby that can easily be shared for friends and famiies to join and play together.\n\n Some of the hardest logistical challenges came from integrating the websocket library into the phaser javascript game engine. Without using a netcode library, I had to manually create a system based on the limits of the socket.io library and the phaser engine. Through the iterative process I managed to create a game status object managed by the server which would allow players to send inputs but also receive data from the server which was crucial to accurately rendering the game.",
             "stack": ["Phaser3, Socket.io","ExpressJS, Node,", "Webpack, Heroku","Aesprite"],
             "img": "https://raw.githubusercontent.com/luke-yin/tanks-final/master/docs/title.png",
             "demo": "https://lhltanks.herokuapp.com/",
