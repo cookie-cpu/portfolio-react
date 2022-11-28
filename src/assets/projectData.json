@@ -65,14 +65,6 @@
             "demo": "",
             "repo": "https://github.com/cookie-cpu/tinyapp"
         },{
-            "id": "9",
-            "title": "FinstaGram",
-            "description": "",
-            "stack": ["Ruby, Rails"],
-            "img": "",
-            "demo": "",
-            "repo": ""
-        },{
             "id": "10",
             "title": "SpaceX Tracker",
             "description": "",
